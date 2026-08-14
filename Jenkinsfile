@@ -18,6 +18,15 @@ pipeline {
             }
         }
 
+        // Stage 2: Run SonarQube static code analysis
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('sonarqube_server') {
+                    bat 'mvn sonar:sonar'
+                }
+            }
+        }
+
     }
 
     // Actions to perform after the pipeline completes
