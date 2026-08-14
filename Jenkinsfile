@@ -27,6 +27,15 @@ pipeline {
             // Publish JUnit XML test results
             junit 'target/surefire-reports/*.xml'
 
+            // Publish JaCoCo HTML code coverage report
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'target/site/jacoco',
+                reportFiles: 'index.html',
+                reportName: 'JaCoCo Code Coverage Report'
+            ])
         }
     }
 }
