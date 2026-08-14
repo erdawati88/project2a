@@ -20,6 +20,18 @@
 
         <!-- Java version -->
         <maven.compiler.release>17</maven.compiler.release>
+        
+        <!-- SonarQube server URL -->
+    	<sonar.host.url>http://localhost:9000</sonar.host.url>
+
+    	<!-- SonarQube project identification -->
+    	<sonar.projectKey>jenkins_project2a</sonar.projectKey>
+    	<sonar.projectName>jenkins_project2a</sonar.projectName>
+
+    	<!-- JaCoCo XML report generated during 'verify' -->
+    	<sonar.coverage.jacoco.xmlReportPaths>
+        	target/site/jacoco/jacoco.xml
+    	</sonar.coverage.jacoco.xmlReportPaths>
 
     </properties>
 
@@ -177,7 +189,16 @@
                 </executions>
 
             </plugin>
+            
+			<!-- SonarQube Scanner for Maven -->
+			<plugin>
 
+    			<groupId>org.sonarsource.scanner.maven</groupId>
+    			<artifactId>sonar-maven-plugin</artifactId>
+    			<version>4.0.0.4121</version>
+
+			</plugin>
+			
         </plugins>
 
     </build>
