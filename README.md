@@ -10,3 +10,5 @@ This project implements a CI/CD pipeline for a Java Maven project using Jenkins,
 - Achieved 100% instruction and branch coverage
 - Integrated SonarQube code quality analysis
 - Configured the initial Jenkins Build & Test pipeline stage
+- Published JUnit test results and JaCoCo coverage report in Jenkins
+- Integrated SonarQube analysis and Quality Gate in Jenkins
