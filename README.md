@@ -12,3 +12,4 @@ This project implements a CI/CD pipeline for a Java Maven project using Jenkins,
 - Configured the initial Jenkins Build & Test pipeline stage
 - Published JUnit test results and JaCoCo coverage report in Jenkins
 - Integrated SonarQube analysis and Quality Gate in Jenkins
+- Enabled Poll SCM for automatic Jenkins pipeline triggering
