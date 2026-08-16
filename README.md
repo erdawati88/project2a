@@ -13,4 +13,7 @@ This project implements a CI/CD pipeline for a Java Maven project using Jenkins,
 - Published JUnit test results and JaCoCo coverage report in Jenkins
 - Integrated SonarQube analysis and Quality Gate in Jenkins
 - Enabled Poll SCM for automatic Jenkins pipeline triggering
+- Demonstrated Jenkins CI test failure using an intentionally incorrect JUnit assertion
+- Restored the correct JUnit assertion and verified successful pipeline recovery
 - Demonstrated Quality Gate enforcement using a temporary stricter coverage threshold
+- Restored the default SonarQube Quality Gate after validating pipeline failure handling
